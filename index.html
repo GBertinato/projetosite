@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Meu Site</title> 
+</head>
+
+<body>
+  <header>
+    <img src=https://i.im.ge/2023/09/25/Ni0Ktf.logo-PG-1.png>
+    <h1>PG Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="trabalhec.html">Trabalhe conosco</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="cntt.html">Contatos</a></li>
+        <li><button onclick="trocarCor()">Escuro</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="search-bar">
+    <input type="text" placeholder="Pesquisar">
+    <button>Buscar</button>
+  </div>
+  <script>
+    var nome = prompt('Olá. Espero que esteja bem. Como gostaria de ser chamado?')
+    alert('É um ótimo nome. Um prazer em te conhecer, ' + nome + ' .')
+
+    function trocarCor() {
+      document.body.style.backgroundColor = 'black';
+
+      document.body.style.color = 'white'
+    }
+  </script>
+  <main>
+    <section>
+      <h3>Quem somos</h3>
+      <p> Uma das maiores empresas de TI. Somos responsáveis por ajudar as micro, média e grandes empresas a se
+        incluirem no mundo tecnologico da forma mais adequada e segura possível.</p>
+      <p> Com o auxilio de excelentes profissionais, a sua empresa pode se tornar a mais atualizada em tecnologia com
+        a ajuda de serviços em tecnologia.</p></br>
+      <div class="center">
+        <img
+          src="https://profitec.com.br/blog/wp-content/uploads/2019/04/Conheca-o-trabalho-de-um-tecnico-em-informatica-2-1024x538.jpg"></img>
+        <img
+          src="data:image/jpeg;base64,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"></img>
+        <img src="https://blog.espm.br/hubfs/shutterstock_746652745-jpg.jpeg"></img>
+        <img src="https://blog.exati.com.br/wp-content/uploads/2022/04/metaverso.jpg"></img>
+        <img
+          src="https://www.softsell.com.br/wp-content/uploads/2020/07/conheca-as-principais-funcoes-de-um-especialista-em-redes-de-computadores-01.jpg"></img>
+        <img src="https://www.elaborata.com.br/u/formacoes/51/analista-de-redes-pleno-capa.jpg"></img>
+
+        <p>Estabelecidos como uma das empresas líderes no setor de Tecnologia da Informação, nossa missão é ser a força
+          matriz por trás da transformação tecnológica de micro, pequenas, médias e grandes empresas em todo o
+          mundo.</br>
+
+          Fornecemos serviços: Cloud, Engenharia de Infraestrutura, Dados, Serviços de Plataforma e Engenharia de
+          Software.
+
+          Estamos comprometidos em ser o parceiro de confiança que ajuda sua empresa a se destacar na vanguarda da
+          inovação e do sucesso empresarial.</br></p>
+
+        <h1>Vídeo</h1>
+
+
+        <iframe width="560" height="315" src="https://youtube.com/embed/3iYycg99V9Q" frameborder="0"
+          allowfullscreen></iframe>
+
+
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Guilherme Miranda Bertinato Da Rocha, 42337615</br>
+    </p>
+    <a href="https://wa.me/5511962162061/?" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"></img>
+    </a>
+    <a href="https://instagram.com/pgsolutionsbrasil?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-three-dimensional-instagram-icon-png-image_9015419.png"></img>
+  </footer>
+</body>
+
+</html>
